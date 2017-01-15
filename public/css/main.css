@@ -70,6 +70,7 @@ My Text (Bootstrap nav)
 	height: 20vh;
 	display: block;
 	border-bottom: 1px solid #a4a4a4;
+	padding-top: 5vh;
 }
 
 	#more-arrow{
@@ -77,6 +78,8 @@ My Text (Bootstrap nav)
 		max-width: 50px;
 		margin: auto;
 		display: block;
+		margin-bottom: 5vh;
+		opacity: 0.2;
 	}
 
 
@@ -90,14 +93,14 @@ Menu / Tic Tac Toe Board
     margin: auto;
     width: 100%;
     float: right;
-    padding-top: 18vh;
+    padding-top: 16vh;
 }
 
 	.menu-row{
 		display: block;
 		width: 85%;
 		margin: auto;
-		border-bottom: 1px solid #E1E6EB ;
+		border-bottom: 0px solid #ffffff ;
 	}
 
 		#menu-bottom-row{
@@ -109,9 +112,10 @@ Menu / Tic Tac Toe Board
 		text-align: center;
         display: inline-block;
         width: 32.2%;
-        height: 18vh;
+        height: 22vh;
         margin: 0vh 0px 0vh 0px;
-        border-color: #E1E6EB !important;
+        border-color: #ffffff !important;
+        border: none !important;
 	}
 
 	.menu-label{
@@ -121,7 +125,7 @@ Menu / Tic Tac Toe Board
 	.menu-icon{
 		width: 65%;
 		margin: auto;
-		opacity: 0.7;
+		opacity: 0.75;
 		margin-bottom: 2vh;
 		margin-top: 2vh;
 	}
@@ -208,7 +212,6 @@ Misc.
 =====================*/
 
 #icons8{
-	position: relative;
 	text-align: center;
 	font-size: 0.5em;
 	display: block;
