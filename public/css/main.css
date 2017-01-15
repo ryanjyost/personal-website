@@ -9,40 +9,56 @@ body{
 }
 
 h1{
-	text-align: center;
-	color: #292929;
-	font-size: 2.5em;
-	position: relative;
-	line-height: 1.3em;
+
 }
 
 
 #main{
-	padding: 0px 0px 0px 0px;
+	padding: 2vh 0px 0px 0px;
 }
+
+
+/*====================
+My Text (Bootstrap nav)
+=====================*/
+
+#my-text{
+		height: 12vh;
+		background-color: #ffffff;
+		opacity: .9;
+		width: 100%;
+		border: 1px solid #D8D8D8;
+		padding: 0px 0% 0px 0%;
+		margin-top: 2vh;
+		text-align: center;
+
+	}
+
+	#my-text h1{
+		font-size: 2em;
+		margin: 0px 0px 0px 0px;
+		width: 100%;
+		 line-height: 12vh;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+
+	#personal-photo{
+		border-radius: 80px;
+		border: 2px solid #6E6E6E;
+		width: 72%;
+
+	}
+
+
 
 
 /* landing page sections */
 #intro{
 	height: 100vh;
-	padding-top: 3vh;
+	padding-top: 1vh;
 }
-		#my-text{
-			height: 25vh;
-			background-color: #ffffff;
-			opacity: .75;
-			padding: 5vh 0% 5vh 0%;
-			margin-top: 3vh;
-			width: 100%;
-			border: 1px solid #D8D8D8;
-		}
 
-		#personal-photo{
-			border-radius: 80px;
-			border: 2px solid #6E6E6E;
-			width: 72%;
-
-		}
 
 /*====================
 Menu / Tic Tac Toe Board
@@ -54,7 +70,7 @@ Menu / Tic Tac Toe Board
     margin: auto;
     width: 100%;
     float: right;
-    padding-top: 5vh;
+    padding-top: 25vh;
 }
 
 	.menu-row{
@@ -138,6 +154,7 @@ Menu / Tic Tac Toe Board
 /*====================
 About Me
 =====================*/
+
 
 
 /*====================
