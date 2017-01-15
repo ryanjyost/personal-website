@@ -6,6 +6,7 @@ Main selectors
 body{
 	font-family: 'Glegoo';
 	background-color: #f9f9f9;
+	overflow-x:  hidden;
 }
 
 h1{
@@ -14,7 +15,8 @@ h1{
 
 
 #main{
-	padding: 2vh 0px 0px 0px;
+	padding: 0vh 0px 0px 0px;
+	background-color: #f9f9f9;
 }
 
 
@@ -22,16 +24,19 @@ h1{
 My Text (Bootstrap nav)
 =====================*/
 
+#top-nav{
+	opacity: .9 !important;
+}
+
 #my-text{
 		height: 12vh;
 		background-color: #ffffff;
-		opacity: .9;
+		opacity: .9 !important;
 		width: 100%;
 		border: 1px solid #D8D8D8;
 		padding: 0px 0% 0px 0%;
-		margin-top: 2vh;
+		margin-top: 0vh;
 		text-align: center;
-
 	}
 
 	#my-text h1{
@@ -55,16 +60,31 @@ My Text (Bootstrap nav)
 
 /* landing page sections */
 #intro{
-	height: 100vh;
+	height: 90vh;
 	padding-top: 1vh;
+
 }
+
+/* Mobile more arrow */
+#more-arrow-cont{
+	height: 10vh;
+	display: block;
+	border-bottom: 1px solid #a4a4a4;
+}
+
+	#more-arrow{
+		width: 10%;
+		max-width: 50px;
+		margin: auto;
+		display: block;
+	}
 
 
 /*====================
 Menu / Tic Tac Toe Board
 =====================*/
 #menu{
-	height: 65vh;
+	height: 70vh;
 	background-color: #f9f9f9;
 	display: block;
     margin: auto;
@@ -101,7 +121,7 @@ Menu / Tic Tac Toe Board
 	.menu-icon{
 		width: 65%;
 		margin: auto;
-		opacity: 0.5;
+		opacity: 0.7;
 		margin-bottom: 2vh;
 		margin-top: 2vh;
 	}
@@ -192,7 +212,8 @@ Misc.
 	text-align: center;
 	font-size: 0.5em;
 	display: block;
-	margin-top: 10%;
+	margin-top: 1%;
+	color: #A4A4A4;
 
 }
 
