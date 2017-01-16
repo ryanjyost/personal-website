@@ -56,6 +56,7 @@ My Text (Bootstrap nav)
 	}
 
 
+/* narrtion text id's for jquery */
 
 
 /* landing page sections */
@@ -101,11 +102,13 @@ Menu / Tic Tac Toe Board
         margin: 0vh 0px 0vh 0px;
         border-color: #ffffff !important;
         border: none !important;
+        opacity: 0;
 	}
 
 	.menu-label{
 		color: #BDBDBD;
 		font-weight: 200;
+		opacity: 0;
 	}
 
 	.menu-icon{
@@ -179,7 +182,7 @@ Bottom of landing/home
 		margin: auto;
 		display: block;
 		margin-bottom: 5vh;
-		opacity: 0.2;
+		opacity: 0.4;
 	}
 
 /*====================
