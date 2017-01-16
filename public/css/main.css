@@ -59,7 +59,7 @@ My Text (Bootstrap nav)
 	display: none;
 }
 
-#hi-im-ryan{
+#me-intro-1{
 	display: block;
 }
 
@@ -67,7 +67,7 @@ My Text (Bootstrap nav)
 
 /* landing page sections */
 #intro{
-	height: 80vh;
+	height: 72vh;
 	padding-top: 1vh;
 
 }
@@ -177,21 +177,42 @@ Bottom of landing/home
 
 /* Bottom buttons */
 #home-btn-cont{
-	height: 20vh;
+	height: 28vh;
 	display: block;
+	margin: auto;
 	border-bottom: 1px solid #a4a4a4;
-	padding-top: 3vh;
+	width: 80%;
 }
+
+	.play-btn{
+		text-align: center;
+		border: 0px solid #ffffff;
+		font-size: 1.3em;
+		font-family: 'Raleway';
+		height: 10vh;
+	}
+
+
 
 	#more-arrow{
 		width: 10%;
 		max-width: 50px;
 		margin: auto;
-		display: block;
+		display: none;
 		margin-bottom: 5vh;
 		opacity: 0.4;
 	}
 
+#icons8{
+	text-align: center;
+	font-size: 1em;
+	display: block;
+	margin-top: 40%;
+	color: #A4A4A4;
+	display: block;
+	opacity: 0;
+
+}
 /*====================
 About Me
 =====================*/
@@ -228,12 +249,5 @@ Projects
 Misc.
 =====================*/
 
-#icons8{
-	text-align: center;
-	font-size: 0.5em;
-	display: block;
-	margin-top: 1%;
-	color: #A4A4A4;
 
-}
 
