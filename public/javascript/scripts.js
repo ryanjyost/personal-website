@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 	$('.menu-item').delay(1050).fadeTo(700, 1);
 	$('#icons8').delay(1050).fadeTo(700, 1);
+	$('.play-btn').delay(1350).fadeTo(700, 1);
 
 
 
