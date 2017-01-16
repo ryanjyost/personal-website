@@ -4,7 +4,7 @@ Main selectors
 =====================*/
 
 body{
-	font-family: 'Glegoo';
+	font-family: 'Josefin Slab', serif;
 	background-color: #f9f9f9;
 	overflow-x:  hidden;
 }
@@ -65,22 +65,7 @@ My Text (Bootstrap nav)
 
 }
 
-/* Mobile more arrow */
-#more-arrow-cont{
-	height: 20vh;
-	display: block;
-	border-bottom: 1px solid #a4a4a4;
-	padding-top: 5vh;
-}
 
-	#more-arrow{
-		width: 10%;
-		max-width: 50px;
-		margin: auto;
-		display: block;
-		margin-bottom: 5vh;
-		opacity: 0.2;
-	}
 
 
 /*====================
@@ -119,7 +104,7 @@ Menu / Tic Tac Toe Board
 	}
 
 	.menu-label{
-		color: #D8D8D8;
+		color: #BDBDBD;
 		font-weight: 200;
 	}
 
@@ -175,6 +160,27 @@ Menu / Tic Tac Toe Board
 		}
 
 
+
+/*====================
+Bottom of landing/home
+=====================*/
+
+/* Bottom buttons */
+#home-btn-cont{
+	height: 20vh;
+	display: block;
+	border-bottom: 1px solid #a4a4a4;
+	padding-top: 3vh;
+}
+
+	#more-arrow{
+		width: 10%;
+		max-width: 50px;
+		margin: auto;
+		display: block;
+		margin-bottom: 5vh;
+		opacity: 0.2;
+	}
 
 /*====================
 About Me
