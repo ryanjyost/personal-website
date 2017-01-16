@@ -11,6 +11,12 @@ body{
 
 h1{
 	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	 line-height: 12vh;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
@@ -39,15 +45,6 @@ My Text (Bootstrap nav)
 		text-align: center;
 	}
 
-	#my-text h1{
-		font-size: 2em;
-		margin: 0px 0px 0px 0px;
-		width: 100%;
-		 line-height: 12vh;
-	    display: inline-block;
-	    vertical-align: middle;
-	}
-
 	#personal-photo{
 		border-radius: 80px;
 		border: 2px solid #6E6E6E;
@@ -56,7 +53,16 @@ My Text (Bootstrap nav)
 	}
 
 
+
 /* narrtion text id's for jquery */
+.my-text{
+	display: none;
+}
+
+#hi-im-ryan{
+	display: block;
+}
+
 
 
 /* landing page sections */
@@ -123,6 +129,7 @@ Menu / Tic Tac Toe Board
 			border-right: 1px solid ;
 		}
 		#menu-top-center{
+			opacity: 1;
 		}
 		#menu-top-right{
 			border-left: 1px solid ;
