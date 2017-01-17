@@ -14,7 +14,9 @@ $(document).ready(function(){
 
 	$('.menu-item').delay(1050).fadeTo(700, .3);
 	$('#icons8').delay(1050).fadeTo(700, 1);
-	$('.play-btn-cont').delay(1250).fadeTo(700, .8);
+	$('.play-btn-cont').delay(1250).fadeTo(700, .8, function(){
+
+	});
 
 	let game = false;
 
@@ -23,10 +25,18 @@ $(document).ready(function(){
 	//=====================================================
 
 	$('#thumbs-up-icon').click(function(){
+		game=true;
+
+		$('#me-intro-2').slideUp(400);
+		$('#me-intro-3').slideDown(400);
+
 
 	})
 
 
+	//=====================================================
+	// Functions
+	//=====================================================
 
 
 
