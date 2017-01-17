@@ -10,13 +10,27 @@ body{
 }
 
 h1{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 2em;
 	margin: 0px 0px 0px 0px;
 	width: 100%;
-	 line-height: 12vh;
+	line-height: 12vh;
     display: inline-block;
     vertical-align: middle;
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	line-height: 12vh;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h6{
+	font-size: 1em;
 }
 
 
@@ -79,7 +93,7 @@ My Text (Bootstrap nav)
 Menu / Tic Tac Toe Board
 =====================*/
 #menu{
-	height: 73vh;
+	height: 70vh;
 	background-color: #f9f9f9;
 	display: block;
     margin: auto;
@@ -184,15 +198,17 @@ Bottom of landing/home
 	width: 80%;
 }
 
-	.play-btn{
+	.play-btn-cont{
 		text-align: center;
 		border: 0px solid #ffffff;
-		font-size: 1.3em;
-		font-family: 'Raleway';
 		height: 10vh;
 		top: 0;
 		opacity: 0;
 	}
+
+		.play-btn{
+			width: 50%;
+		}
 
 
 
