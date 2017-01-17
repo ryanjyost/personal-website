@@ -4,8 +4,8 @@ Main selectors
 =====================*/
 
 body{
-	font-family: 'Josefin Slab', serif;
-	background-color: #f9f9f9;
+	font-family: 'Glegoo', serif;
+	background-color: #fefefe;
 	overflow-x:  hidden;
 }
 
@@ -36,7 +36,6 @@ h6{
 
 #main{
 	padding: 0vh 0px 0px 0px;
-	background-color: #f9f9f9;
 }
 
 
@@ -94,7 +93,6 @@ Menu / Tic Tac Toe Board
 =====================*/
 #menu{
 	height: 70vh;
-	background-color: #f9f9f9;
 	display: block;
     margin: auto;
     width: 100%;
@@ -231,6 +229,20 @@ Bottom of landing/home
 	opacity: 0;
 
 }
+
+/*====================
+Styling for Tic-Tac-Toe
+Game & jQuery
+=====================*/
+
+.disable-scroll{
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+
 /*====================
 About Me
 =====================*/
