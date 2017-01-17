@@ -3,7 +3,12 @@ $(document).ready(function(){
 	//=====================================================
 	// Initial Page Load
 	//=====================================================
+
+	//disable scrolling for now
+	$('body').bind('touchmove', (e)=> {e.preventDefault()});
 	$('body').addClass('disable-scroll');
+
+
 	$('#me-intro-1').delay(1000).slideUp(400);
 	$('#me-intro-2').delay(1000).slideDown(400);
 
