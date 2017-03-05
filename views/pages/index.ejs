@@ -6,101 +6,53 @@
 
 <body>
 
-  <% include ../partials/header.ejs %>
+<% include ../partials/header.ejs %>
 
+<div class="container">
+<div class="row">
 
-<div id="main" class="container-fluid">
-    <nav id="top-nav" class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid" id="my-text" >
-        <h1 class="my-text" id="me-intro-1"> Hi, I'm Ryan. </h1>
-        <h2 class="my-text" id="me-intro-2"> Want to play tic-tac-toe? </h2>
-        <h1 class="my-text" id="me-intro-3"> Nice! Let's play.</h1>
-      </div>
-    </nav>
+<% include ../partials/sidebar.ejs %>
 
+    <div id="content" class="col-xs-12 col-sm-12 col-md-9">
+      <div id="landing" class="row" >
+          <div id="landing-banner">
+            <h1 id="landing-title">Hi, I'm Ryan.</h1>
 
-    <div id="intro" class="row">
-      <!-- Mobile friendly menu -->
-      <div id="menu" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="row menu-row">
-            <div id="menu-top-left" class="menu-item">
-              <img class="menu-icon" src="email-icon.png"/>
-              <p class="menu-label">Email</p>
+            <h2 id="landing-subtitle">I learn and create things in my spare time. <br/></h2>
+          </div>
+
+            <div id="scroll-below">
+              <h4>Scroll to see some stuff I've made.</h4>
+              <div class="arrow-cont">
+                <div id="arrow-1" class="arrow-down"></div>
+                <div id="arrow-2" class="arrow-down"></div>
+                <div id="arrow-3" class="arrow-down"></div>
+                <div id="arrow-4" class="arrow-down"></div>
+              </div>
             </div>
+      </div> <!-- landing -->
 
-            <div id="menu-top-center" class="menu-item">
-              <img id="personal-photo" class="menu-icon" src="personal-photo.jpg"/>
-              <p class="menu-label">About Me</p>
-            </div>
-
-            <div id="menu-top-right" class="menu-item">
-              <img class="menu-icon" src="github-icon.png"/>
-              <p class="menu-label">GitHub</p>
-            </div>
-        </div>
-        <div class=" row menu-row">
-          <div id="menu-mid-left" class="menu-item">
-            <img class="menu-icon" src="medium-icon.png"/>
-            <p class="menu-label">Blog</p>
-          </div>
-
-          <div id="menu-mid-center" class="menu-item">
-          <img class="menu-icon" src="resume-icon.png"/>
-            <p class="menu-label">Resume</p>
-          </div>
-
-          <div id="menu-mid-right" class="menu-item">
-             <img class="menu-icon" src="codepen-icon.png"/>
-             <p class="menu-label">CodePen</p>
-          </div>
-        </div>
-
-        <div id="menu-bottom-row" class=" row menu-row">
-          <div id="menu-btm-left" class="menu-item">
-              <img class="menu-icon" src="twitter-icon.png"/>
-              <p class="menu-label">Twitter</p>
-          </div>
-
-          <div id="menu-btm-center" class="menu-item">
-          <img class="menu-icon" src="portfolio-icon.png"/>
-            <p class="menu-label">Portfolio</p>
-          </div>
-
-          <div id="menu-btm-right" class="menu-item">
-            <img class="menu-icon" src="skills-icon.png"/>
-            <p class="menu-label">Skills</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" id="home-btn-cont">
-        <div class="play-btn-cont col-xs-6">
-          <img class="play-btn" id="thumbs-up-icon" src="thumbs-up-icon.png"/>
-          <h6>Let's play!</h6>
-        </div>
-        <div class="play-btn-cont col-xs-6">
-          <img class="play-btn" id="thumbs-up-icon" src="thumbs-down-icon.png"/>
-          <h6>I'll just scroll</h6>
-        </div>
-
-        <img id="more-arrow" src="expand-arrow.png"/>
-        <a id="icons8" href="https://icons8.com/web-app/2848/Message-Filled">icons from icons8</a>
-    </div>
+      <div id="blisst" class="row">
 
 
-    <div id="about-me" class="row">
-
-    </div>
 
 
-    <div class="row project">
-        <div class="col-xs-12 project-img">Project</div>
-        <div class="col-xs-12 project-text">Project</div>
-    </div>
 
-</div>
+      </div><!--blistt-->
 
-<% include ../partials/footer.ejs %>
+
+
+
+
+
+    </div><!-- content -->
+
+
+
+
+
+</div><!--end-row -->
+</div><!-- end container -->
+
 </body>
 </html>

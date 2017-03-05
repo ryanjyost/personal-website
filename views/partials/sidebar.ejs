@@ -1,0 +1,129 @@
+<nav id="sidebar" class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+        <!-- navbar collapse (hamburger) button -->
+        <button id="dropdown-btn" type="button" class="navbar-toggle up" data-toggle="collapse" data-target="#accordion" aria-expanded="false">
+            <img id="dropdown-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABl0lEQVRoQ+2Y4XHCMAyFpQnaEdoV4kXoBmWDbtAVugFs0C4Sr9CyARu451zCBUNiW9Y7OE75xyV60veesQlMD3Lxg3CQgdxbkpaIJQJywJYWyFixrCUitg5UaImAjBXLniXSdd07EX0S0TMzb/u+/xErAwqdc5sQwi5Kp/OlIL/M/DLNEELYeu/3gJmqJaPJzDxAxCuE8Oe9f50+n4E4545E9DTvcg8wKcQIcvDen0xPQTZE9J3adUuYaxDjfG/zpX+xay0V3gKmZpar22+NQPViLyyonWHxHKkVKpyv6DFJ79UDUSJYNOnKQ9Ke2ZNdKiwBaumVBYkDtTQoBWrtUQSChmmFGE76UsdQMBoQ1SDaMFoQIhAtGE0IMUgrjDZEE4gUBgHRDFILg4JQASmFQUKogeRghkazl6Jpy9f8RV11juTOnJV3h4tSTQjVRKZJS2C0ISAga8ss3kNAwECWYFAQUJAZzNeYxAfyHxnVL3tuM0DeNxCkuxJtS0TiGrLGEkG6K9G2RCSuIWssEaS7Em1LROIasuYftuhOQvH2mOsAAAAASUVORK5CYII=" >
+        </button>
+        <!-- end hamburger btn -->
+        <a class="navbar-brand" href="#"></a>
+  </div><!-- end navbar header -->
+
+      <div class="panel-group collapse navbar-collapse" id="accordion">
+
+        <div id="panel-1" class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+                <a href="#">Home</a>
+            </h4>
+          </div>
+        </div>
+
+        <div id="panel-2" class="panel panel-default" id="menu-cont">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Portfolio</a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                  <table class="table">
+                      <tr>
+                          <td>
+                               <img class="menu-icon" src="../images/github-icon.png"/><a href="#">Github</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                                <img class="menu-icon" src="../images/github-icon.png"/><a href="#">Github</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                                <img class="menu-icon" src="../images/github-icon.png"/><a href="#">Github</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+            </div>
+          </div>
+
+          <div id="panel-3" class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Skills</a>
+                  </h4>
+              </div>
+
+          <div id="panel-4" class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">About Me</a>
+                  </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                      <table class="table">
+                          <tr>
+                              <td>
+                                  <a href="#">Change Password</a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <a href="#">Notifications</a> <span class="label label-info">5</span>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <a href="#">Import/Export</a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  <span class="glyphicon glyphicon-trash text-danger"></span><a href="#" class="text-danger">
+                                      Delete Account</a>
+                              </td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+          </div>
+          <div id="panel-5" class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Get in touch</a>
+                  </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse">
+                  <div class="panel-body">
+                      <table class="table">
+                          <tr>
+                            <td>
+                                 <img class="menu-icon" src="../images/github-icon.png"/><a href="#">Github</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                  <img class="menu-icon" src="../images/github-icon.png"/><a href="#">Github</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                  <img class="menu-icon" src="../images/github-icon.png"/><a href="#">Github</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                  <img class="menu-icon" src="../images/github-icon.png"/><a href="#">Github</a>
+                            </td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+          </div>
+
+        <% include ../partials/footer.ejs %>
+
+
+      </div><!-- accordion -->
+</nav> <!--sidebar -->

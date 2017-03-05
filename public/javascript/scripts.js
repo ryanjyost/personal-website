@@ -4,34 +4,69 @@ $(document).ready(function(){
 	// Initial Page Load
 	//=====================================================
 
-	//disable scrolling for now
-	$('body').bind('touchmove', (e)=> {e.preventDefault()});
-	$('body').addClass('disable-scroll');
+	//greeting and message
+	$('#landing-title').delay(200).fadeIn(600)
+	$('#landing-subtitle').delay(600).fadeIn(1000)
+
+	const delaySidebar = 1700;
+
+	//bring in sidebar
+	$('#panel-1').delay(delaySidebar).animate({height:'show'}, 500);
+	$('#panel-2').delay(delaySidebar+200).animate({height:'show'}, 500);
+	$('#panel-3').delay(delaySidebar+400).animate({height:'show'}, 500);
+	$('#panel-4').delay(delaySidebar+600).animate({height:'show'}, 500);
+	$('#panel-5').delay(delaySidebar+800).animate({height:'show'}, 500);
+	$('#icons8').delay(delaySidebar+1000).animate({height:'show'}, 500);
+
+	//bring in "Scroll to see" and arrow animation
+	$('#scroll-below').delay(delaySidebar+1500).fadeIn();
+	$('.arrow-cont').delay(delaySidebar+2000).fadeIn();
+
+			//==============================
+			// Scroll Down Arrow Animations
+
+			function animateScrollArrow() {
+
+				for(var i=1; i>-101;i--){
+					if(i === 1){
+						var n=1;
+					} else{
+						var n=0;
+					}
+
+					$('#arrow-1').delay(0).animate({'opacity':'1'}, 1000, 'swing').delay(0).animate({'opacity':'0'}, 1000, 'swing');
 
 
-	$('#me-intro-1').delay(1000).slideUp(400);
-	$('#me-intro-2').delay(1000).slideDown(400);
+				}
+			}
 
-	$('.menu-item').delay(1050).fadeTo(700, .3);
-	$('#icons8').delay(1050).fadeTo(700, 1);
-	$('.play-btn-cont').delay(1250).fadeTo(700, .8, function(){
+			animateScrollArrow();
 
+
+
+
+
+	//=====================================================
+	// Rotate Dropdown Button
+	//=====================================================
+
+	var $expanded=0;
+
+	$('#dropdown-btn').click(function(){
+		if($expanded==0){
+			$(this).addClass('down');
+			$expanded = 1;
+		} else{
+			$(this).removeClass('down');
+			$expanded = 0;
+		}
 	});
 
-	let game = false;
-
-	//=====================================================
-	// Play Tic-Tac-Toe
-	//=====================================================
-
-	$('#thumbs-up-icon').click(function(){
-		game=true;
-
-		$('#me-intro-2').slideUp(400);
-		$('#me-intro-3').slideDown(400);
 
 
-	})
+
+
+
 
 
 	//=====================================================

@@ -1,283 +1,507 @@
-
-/*====================
-Main selectors
-=====================*/
+/*=================================
+GENERAL
+================================= */
 
 body{
-	font-family: 'Glegoo', serif;
-	background-color: #fefefe;
-	overflow-x:  hidden;
+	font-weight: 200;
+	font-family: 'Lato', sans-serif;
+	overflow-x: hidden; // hide horizontal
 }
 
+@media(min-width: 768px){
+	body{
+		overflow-y: hidden; // hide vertical
+	}
+}
+
+/* Headers */
 h1{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 2em;
+	font-size: 6em;
+	font-weight: 800 !important;
+	position: relative;
+	color: #585858;
 	margin: 0px 0px 0px 0px;
-	width: 100%;
-	line-height: 12vh;
-    display: inline-block;
-    vertical-align: middle;
+	text-align: left;
 }
 
 h2{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.5em;
-	margin: 0px 0px 0px 0px;
-	width: 100%;
-	line-height: 12vh;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-h6{
-	font-size: 1em;
-}
-
-
-#main{
-	padding: 0vh 0px 0px 0px;
-}
-
-
-/*====================
-My Text (Bootstrap nav)
-=====================*/
-
-#top-nav{
-	opacity: .9 !important;
-}
-
-#my-text{
-		height: 12vh;
-		background-color: #ffffff;
-		opacity: .9 !important;
-		width: 100%;
-		border: 1px solid #D8D8D8;
-		padding: 0px 0% 0px 0%;
-		margin-top: 0vh;
-		text-align: center;
-	}
-
-	#personal-photo{
-		border-radius: 80px;
-		border: 2px solid #6E6E6E;
-		width: 72%;
-
-	}
-
-
-
-/* narrtion text id's for jquery */
-.my-text{
-	display: none;
-}
-
-#me-intro-1{
-	display: block;
-}
-
-
-
-/* landing page sections */
-#intro{
-	height: 72vh;
-	padding-top: 1vh;
-
-}
-
-
-
-
-/*====================
-Menu / Tic Tac Toe Board
-=====================*/
-#menu{
-	height: 70vh;
-	display: block;
-    margin: auto;
-    width: 100%;
-    float: right;
-    padding-top: 14vh;
-}
-
-	.menu-row{
-		display: block;
-		width: 85%;
-		margin: auto;
-		border-bottom: 0px solid #ffffff ;
-	}
-
-		#menu-bottom-row{
-			border-bottom: none !important;
-		}
-
-	.menu-item{
-		vertical-align: top;
-		text-align: center;
-        display: inline-block;
-        width: 32.2%;
-        height: 20vh;
-        margin: 0vh 0px 0vh 0px;
-        border-color: #ffffff !important;
-        border: none !important;
-        opacity: 0;
-	}
-
-	.menu-label{
-		color: #BDBDBD;
-		font-weight: 200;
-		opacity: 0;
-	}
-
-	.menu-icon{
-		width: 65%;
-		margin: auto;
-		opacity: 0.75;
-		margin-bottom: 2vh;
-		margin-top: 2vh;
-	}
-
-		#menu-top-left{
-			border-right: 1px solid ;
-		}
-		#menu-top-center{
-			opacity: 1;
-		}
-		#menu-top-right{
-			border-left: 1px solid ;
-		}
-		#menu-mid-left{
-
-			border-right: 1px solid ;
-		}
-		#menu-mid-center{
-
-
-		}
-		#menu-mid-right{
-
-			border-left: 1px solid ;
-		}
-		#menu-btm-left{
-			background-color: ;
-			border-right: 1px solid ;
-		}
-		#menu-btm-center{
-
-		}
-		#menu-btm-right{
-
-			border-left: 1px solid ;
-		}
-
-
-
-		#about-me{
-			height: 40vh;
-		}
-
-		#intro-bottom{
-			height: 20vh;
-			background-color: #585858;
-		}
-
-
-
-/*====================
-Bottom of landing/home
-=====================*/
-
-/* Bottom buttons */
-#home-btn-cont{
-	height: 28vh;
-	display: block;
+	font-size: 3em;
+	line-height: 1.3em;
+	color: #333333;
+	font-weight: 400 !important;
+	margin-top: 10px;
+	position: relative;
+	text-align: left;
 	margin: auto;
-	border-bottom: 1px solid #a4a4a4;
-	width: 80%;
 }
 
-	.play-btn-cont{
-		text-align: center;
-		border: 0px solid #ffffff;
-		height: 10vh;
-		top: 0;
-		opacity: 0;
+
+
+h4{
+
+}
+
+	h4 a{
+		font-size: 2em;
 	}
 
-		.play-btn{
-			width: 50%;
+@media(max-width:768px){
+		h1{
+			font-size: 4em !important;
+		}
+
+		h2{
+			font-size:2em !important;
+		}
+	}
+
+/* Misc Selectors, Bootstrap elements */
+
+button{
+	border: 0px solid #fff !important;
+}
+
+.row {
+/*  -moz-column-width: 25em;
+ -webkit-column-width: 25em;
+ -moz-column-gap: 0em;
+ -webkit-column-gap: 0em; */
+ height: 100vh;
+
+}
+
+.container{
+	padding: 0vh 0% 0vh 0%;
+	width: 100% !important;
+	max-width: 1200px;
+	overflow-y: hidden;
+}
+
+
+/*===================
+Sidebar
+====================*/
+
+#sidebar{
+	background-color: #ffffff;
+	overflow: scroll;
+	padding: 15px 0px 15px 3%;
+	position: fixed;
+	border-bottom: 1px solid #f2f2f2;
+	opacity: .95;
+}
+
+
+nav{
+	box-shadow: none !important;
+	opacity: 1;
+	display: block;
+	background-image: linear-gradient(to bottom,#fff 0,#fff 100%) !important;
+	border: none !important;
+	padding: 50px 0px 50px 0px;
+}
+
+
+
+	.navbar-header{
+		min-width: 200px;
+		padding-right: 5%;
+
+	}
+		#dropdown-icon{
+			width: 100%;
+			opacity: .5;
+		}
+
+		.down{
+			  transform: rotate(180deg);
+			  -ms-transform: rotate(180deg); /* IE 9 */
+			  -moz-transform: rotate(180deg); /* Firefox */
+			  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+			  -o-transform: rotate(180deg); /* Opera */
+			  transition:transform .3s ease-in-out;
+			  -moz-transition: transform .3s ease-in-out; /* Firefox */
+			  -webkit-transition: transform .3s ease-in-out; /* Safari and Chrome */
 		}
 
 
+.icon-bar{
+	background-color: #555555;
+}
 
-	#more-arrow{
-		width: 10%;
-		max-width: 50px;
-		margin: auto;
-		display: none;
-		margin-bottom: 5vh;
-		opacity: 0.4;
+#accordion{
+	width: 80%;
+	border: 0px solid #fff !important;
+	box-shadow: none !important;
+	height: 100vh;
+	overflow: scroll !important;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+	max-height: 1000px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color: transparent;
+}
+
+
+.panel-group{
+	box-shadow: none !important;
+
+}
+.panel-group .panel+.panel{
+	margin-top: 0px !important;
+	border: 0px solid #fff !important;
+	box-shadow: none !important;
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body{
+	border: 0px solid #fff !important;
+}
+
+	.panel{
+		border: 0px solid #fff !important;
 	}
 
-#icons8{
-	text-align: center;
-	font-size: 1em;
-	display: block;
-	margin-top: 40%;
-	color: #A4A4A4;
-	display: block;
-	opacity: 0;
+	#panel-1{display:none;}
+	#panel-2{display:none;}
+	#panel-3{display:none;}
+	#panel-4{display:none;}
+	#panel-5{display:none;}
 
+		/* panel id's for fade in on page load */
+
+	.panel-heading{
+		background-image: linear-gradient(to bottom,#fff 0,#fff 100%) !important;
+		border: 0px solid #fff !important;
+	}
+
+		.panel-title a:hover{
+			text-decoration: none !important;
+			padding-left: .1em;
+			cursor: default;
+		}
+
+		.panel-title a:focus{
+			text-decoration: none !important;
+		}
+
+	td{
+		border: 0px solid #fff !important;
+	}
+
+		td a{
+			text-decoration: none !important;
+			font-size: 1.2em;
+		}
+
+		td a:hover{
+			padding-left: .1em;
+			cursor: default;
+		}
+
+		.glyphicon{
+			padding: 0px .25em 0px 0px;
+		}
+
+
+@media(min-width:991px){
+	#sidebar{
+		width: 25% ;
+		height: 100vh !important;
+		overflow: scroll !important;
+	}
+
+	nav{
+
+	}
 }
 
-/*====================
-Styling for Tic-Tac-Toe
-Game & jQuery
-=====================*/
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
 
-.disable-scroll{
-	height: 100%;
-	overflow: hidden;
+    .navbar-collapse.collapse.in {
+    	display: block!important;
+    }
+}
+
+.menu-icon{
+	width: 30px;
+	margin-right: 10px;
+}
+
+/*===================
+Footer
+====================*/
+footer{
+	padding-left: 20px ;
+	background-color: transparent;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	margin-top: 10px;
+}
+
+	footer p{
+		font-size: 10px;
+	}
+
+	#icons8{
+		color: #848484;
+		font-style: italic;
+		display: none;
+	}
+
+
+
+
+/*===================
+Main Content
+====================*/
+
+#content{
+	overflow: scroll !important;
+	height: 100vh;
+	padding: 2% 10vh 5% 10vh;
+	float: right;
 }
 
 
 
+/*===================
+Landing
+====================*/
 
-/*====================
-About Me
-=====================*/
+#landing{
+	display: block;
+	padding: 125px 5% 10vh 5%;
+}
+
+	#landing h1{
+		padding: 10px 0px 10px 0px;
+	}
+
+		#landing-title{
+			display: none;
+		}
+
+	#landing h2{
+		padding: 10px 0px 10px 0px;
+		display: none;
+	}
+		#landing-subtitle{
+
+		}
 
 
-
-/*====================
-Projects
-=====================*/
-
-.project{
-	margin: 0vh 0px 1vh 0px;
-	min-height: 50vh;
-	height: 50vh;
+#personal-photo{
+	border-radius: 5px !important;
+	width: 150px;
 	border: 1px solid #f2f2f2;
+	position: relative;
+	top: 0;
+	margin: auto;
+	display: block;
+	margin-top: 30px;
+	float: right;
+}
 
+
+/*===================
+Scroll Down
+*/
+
+#scroll-below{
+	margin-bottom: 10px;
+	padding-bottom: 50px;
+	position: absolute;
+	bottom: 0;
+	width: 75%;
+	display: none;
 
 }
 
-  .project-img{
-    border: 1px solid #000000 !important;
-    height: 100%;
-    padding: 0px 1% 0px 1%;
-  }
+#scroll-below h4{
+	font-weight: 800 !important;
+	color: #585858;
+	text-align: right;
+	width: 100%;
+	-webkit-border-image: -webkit-gradient(linear, left bottom, right bottom, from(#ffffff), color-stop(0.5, #000), to(#ffffff), color-stop(1, #ffffff)) 21 30 30 21;
+	display: inline-block;
+	float: right;
+	padding-bottom: 5px;
+}
 
-  .project-text{
-  	border: 1px solid #000000 !important;
-    height: 100%;
-    padding: 0px 1% 0px 1%;
+.arrow-cont{
+	float: right;
+	display: block;
+}
 
-  }
 
-/*====================
-Misc.
-=====================*/
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #EEF6FF;
+  margin-bottom: -1px;
+  border-radius: 7px;
+  opacity: 0;
+  display: block;
+}
+
+
+
+/*===================
+Intro sections
+====================*/
+
+
+
+/*icon stuff*/
+#icons-cont{
+	display:block;
+	padding: 0vh 0px 0px 10%;
+	position: relative;
+	top: 0;
+	width: 75%;
+	margin: 0px 0px 0px 0%;
+
+}
+
+.icon-cont{
+	display: block;
+	margin: 12px 0px 12px 0px;
+	opacity: .5;
+}
+
+	.icon{
+		width: 18%;
+		display: inline-block;
+		padding: 0px 2% 0px 2%;
+		opacity: 1;
+	}
+
+	.icon-cont:hover{
+		opacity: .8;
+		cursor: default;
+	}
+
+
+
+/*===================
+Blisst
+====================*/
+#blisst{
+	background-color: #000000;
+	height: 100vh;
+}
+
+
+
+/*===================
+Rainy Day Fund
+====================*/
+
+#rainy-day-fund h1{
+	font-family: Titillium Web,sans-serif !important;
+	color:#ffffff;
+	font-weight: 700;
+	background-color: #A9F5BC;
+	opacity: .85;
+}
+
+#daily-gray h1 {
+	color: #ffffff;
+	font-family:'PT Sane', sans-serif !important;
+	font-weight: 700;
+	background-color: #585858;
+	opacity: .85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

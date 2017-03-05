@@ -1,0 +1,363 @@
+
+
+body{
+	overflow-y: hidden;
+}
+
+#main{
+	width: 100%;
+	height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+OLD STUFF
+
+
+
+
+
+
+
+*/
+
+
+/*====================
+Main selectors
+=====================*/
+
+body{
+	font-family: 'Glegoo', serif;
+	background-color: #fefefe;
+	overflow-x:  hidden;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	line-height: 12vh;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	line-height: 12vh;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h6{
+	font-size: 1em;
+}
+
+
+#main{
+	padding: 0vh 0px 0px 0px;
+}
+
+
+/*====================
+My Text (Bootstrap nav)
+=====================*/
+
+#top-nav{
+	opacity: .9 !important;
+}
+
+#my-text{
+		height: 12vh;
+		background-color: #ffffff;
+		opacity: .9 !important;
+		width: 100%;
+		border: 1px solid #D8D8D8;
+		padding: 0px 0% 0px 0%;
+		margin-top: 0vh;
+		text-align: center;
+	}
+
+	#personal-photo{
+		border-radius: 80px;
+		border: 2px solid #6E6E6E;
+		width: 72%;
+
+	}
+
+
+
+/* narrtion text id's for jquery */
+.my-text{
+	display: none;
+}
+
+#me-intro-1{
+	display: block;
+}
+
+
+
+/* landing page sections */
+#intro{
+	height: 72vh;
+	padding-top: 1vh;
+
+}
+
+
+
+
+/*====================
+Menu / Tic Tac Toe Board
+=====================*/
+#menu{
+	height: 70vh;
+	display: block;
+    margin: auto;
+    width: 100%;
+    float: right;
+    padding-top: 14vh;
+}
+
+	.menu-row{
+		display: block;
+		width: 85%;
+		margin: auto;
+		border-bottom: 0px solid #ffffff ;
+	}
+
+		#menu-bottom-row{
+			border-bottom: none !important;
+		}
+
+	.menu-item{
+		vertical-align: top;
+		text-align: center;
+        display: inline-block;
+        width: 32.2%;
+        height: 20vh;
+        margin: 0vh 0px 0vh 0px;
+        border-color: #ffffff !important;
+        border: none !important;
+        opacity: 0;
+	}
+
+	.menu-label{
+		color: #BDBDBD;
+		font-weight: 200;
+		opacity: 0;
+	}
+
+	.menu-icon{
+		width: 65%;
+		margin: auto;
+		opacity: 0.75;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+	}
+
+		#menu-top-left{
+			border-right: 1px solid ;
+		}
+		#menu-top-center{
+			opacity: 1;
+		}
+		#menu-top-right{
+			border-left: 1px solid ;
+		}
+		#menu-mid-left{
+
+			border-right: 1px solid ;
+		}
+		#menu-mid-center{
+
+
+		}
+		#menu-mid-right{
+
+			border-left: 1px solid ;
+		}
+		#menu-btm-left{
+			background-color: ;
+			border-right: 1px solid ;
+		}
+		#menu-btm-center{
+
+		}
+		#menu-btm-right{
+
+			border-left: 1px solid ;
+		}
+
+
+
+		#about-me{
+			height: 40vh;
+		}
+
+		#intro-bottom{
+			height: 20vh;
+			background-color: #585858;
+		}
+
+
+
+/*====================
+Bottom of landing/home
+=====================*/
+
+/* Bottom buttons */
+#home-btn-cont{
+	height: 28vh;
+	display: block;
+	margin: auto;
+	border-bottom: 1px solid #a4a4a4;
+	width: 80%;
+}
+
+	.play-btn-cont{
+		text-align: center;
+		border: 0px solid #ffffff;
+		height: 10vh;
+		top: 0;
+		opacity: 0;
+	}
+
+		.play-btn{
+			width: 50%;
+		}
+
+
+
+	#more-arrow{
+		width: 10%;
+		max-width: 50px;
+		margin: auto;
+		display: none;
+		margin-bottom: 5vh;
+		opacity: 0.4;
+	}
+
+#icons8{
+	text-align: center;
+	font-size: 1em;
+	display: block;
+	margin-top: 40%;
+	color: #A4A4A4;
+	display: block;
+	opacity: 0;
+
+}
+
+/*====================
+Styling for Tic-Tac-Toe
+Game & jQuery
+=====================*/
+
+.disable-scroll{
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+
+/*====================
+About Me
+=====================*/
+
+
+
+/*====================
+Projects
+=====================*/
+
+.project{
+	margin: 0vh 0px 1vh 0px;
+	min-height: 50vh;
+	height: 50vh;
+	border: 1px solid #f2f2f2;
+
+
+}
+
+  .project-img{
+    border: 1px solid #000000 !important;
+    height: 100%;
+    padding: 0px 1% 0px 1%;
+  }
+
+  .project-text{
+  	border: 1px solid #000000 !important;
+    height: 100%;
+    padding: 0px 1% 0px 1%;
+
+  }
+
+/*====================
+Misc.
+=====================*/
+
+
+
