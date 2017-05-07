@@ -5,14 +5,9 @@ GENERAL
 body{
 	font-weight: 200;
 	font-family: 'Lato', sans-serif;
-	overflow-x: hidden; // hide horizontal
+	overflow-x: hidden;
 }
 
-@media(min-width: 768px){
-	body{
-		overflow-y: hidden; // hide vertical
-	}
-}
 
 /* Headers */
 h1{
@@ -37,8 +32,11 @@ h2{
 
 
 
-h4{
-
+h5{
+  font-size: 0.8em;
+  display: inline-block;
+  color: #585858;
+  margin: 0px;
 }
 
 	h4 a{
@@ -74,7 +72,7 @@ button{
 	padding: 0vh 0% 0vh 0%;
 	width: 100% !important;
 	max-width: 1200px;
-	overflow-y: hidden;
+
 }
 
 
@@ -86,9 +84,12 @@ Sidebar
 	background-color: #ffffff;
 	overflow: scroll;
 	padding: 15px 0px 15px 3%;
-	position: fixed;
 	border-bottom: 1px solid #f2f2f2;
 	opacity: .95;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 
@@ -123,6 +124,17 @@ nav{
 			  -moz-transition: transform .3s ease-in-out; /* Firefox */
 			  -webkit-transition: transform .3s ease-in-out; /* Safari and Chrome */
 		}
+
+     .up{
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -moz-transform: rotate(0deg); /* Firefox */
+        -webkit-transform: rotate(0deg); /* Safari and Chrome */
+        -o-transform: rotate(0deg); /* Opera */
+        transition:transform .3s ease-in-out;
+        -moz-transition: transform .3s ease-in-out; /* Firefox */
+        -webkit-transition: transform .3s ease-in-out; /* Safari and Chrome */
+    }
 
 
 .icon-bar{
@@ -206,19 +218,27 @@ nav{
 		}
 
 
-@media(min-width:991px){
+@media(min-width:992px){
 	#sidebar{
 		width: 25% ;
 		height: 100vh !important;
 		overflow: scroll !important;
+    z-index: 1030;
+    position: relative;
+    display: inline-block;
 	}
 
-	nav{
-
+	#content{
+		width: 75% !important;
 	}
+
+	video{
+     margin: 0px !important;
+     width: 100% !important;
+  }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .navbar-header {
         float: none;
     }
@@ -228,9 +248,11 @@ nav{
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        height: 100vh !important;
     }
     .navbar-collapse.collapse {
         display: none!important;
+
     }
     .navbar-nav {
         float: none!important;
@@ -289,28 +311,21 @@ footer{
 
 
 
-
-/*===================
-Main Content
-====================*/
-
-#content{
-	overflow: scroll !important;
-	height: 100vh;
-	padding: 2% 10vh 5% 10vh;
-	float: right;
-}
-
-
-
 /*===================
 Landing
 ====================*/
 
 #landing{
 	display: block;
-	padding: 125px 5% 10vh 5%;
+	padding: 14vh 5% 10vh 5%;
+  width: 96%;
+  margin: auto;
 }
+
+  @media(min-width:768px){
+    width:100% !important;
+    padding: 12vh 5% 10vh 5%;
+  }
 
 	#landing h1{
 		padding: 10px 0px 10px 0px;
@@ -327,6 +342,65 @@ Landing
 		#landing-subtitle{
 
 		}
+
+  /*===================
+  Contact Info */
+  #contact-info{
+    height: 10vh;
+    display: none;
+    margin: 5vh 0px 2vh 0px;
+  }
+
+    .contact{
+      display: inline-block;
+      padding: 2% 2%;
+      border: 1px solid #fff;
+      margin: 0px 0px;
+      float: right;
+      max-width: 20%;
+    }
+
+
+    .contact h5{
+      margin-top: 10px;
+      display: none;
+    }
+
+      .icon{
+        width: 90%;
+      }
+
+      #twitter-icon{
+          padding-top: 0vh;
+        }
+
+        #phone-icon{
+          padding-top: 1vh;
+          width: 70%;
+        }
+
+        #email-icon{
+          padding-top: 0.4vh;
+        }
+
+      @media(min-width:992px){
+        .icon{
+          width: 80%;
+          display: block;
+          margin: auto;
+        }
+
+
+      }
+
+
+
+
+
+    #resume:hover{
+
+    }
+
 
 
 #personal-photo{
@@ -348,13 +422,16 @@ Scroll Down
 
 #scroll-below{
 	margin-bottom: 10px;
+	margin-top: 20vh;
 	padding-bottom: 50px;
-	position: absolute;
-	bottom: 0;
-	width: 75%;
+	float: right;
 	display: none;
-
+  width: 100%;
 }
+
+  @media(min-width:992px){
+      margin-top: 10vh !important;
+  }
 
 #scroll-below h4{
 	font-weight: 800 !important;
@@ -388,49 +465,45 @@ Scroll Down
 
 
 /*===================
-Intro sections
+Projects
 ====================*/
 
 
 
-/*icon stuff*/
-#icons-cont{
-	display:block;
-	padding: 0vh 0px 0px 10%;
-	position: relative;
-	top: 0;
-	width: 75%;
-	margin: 0px 0px 0px 0%;
+/*===================
+Main Content */
 
+
+#content{
+  overflow: scroll !important;
+  height: 100vh;
+  padding: 2% 5% 5% 5%;
+  float: right;
+  width: 100%;
+  margin: auto;
+  display: block;
 }
 
-.icon-cont{
-	display: block;
-	margin: 12px 0px 12px 0px;
-	opacity: .5;
+
+video{
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  display: block;
+  border-radius: 5px;
+  border: 4px solid #f2f2f2;
 }
-
-	.icon{
-		width: 18%;
-		display: inline-block;
-		padding: 0px 2% 0px 2%;
-		opacity: 1;
-	}
-
-	.icon-cont:hover{
-		opacity: .8;
-		cursor: default;
-	}
-
-
 
 /*===================
 Blisst
 ====================*/
 #blisst{
-	background-color: #000000;
 	height: 100vh;
 }
+
+  #blisst video{
+
+  }
 
 
 
