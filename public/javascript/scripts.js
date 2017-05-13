@@ -101,11 +101,11 @@ $(document).ready(function(){
 $('.project-desc-expand').click(function(){
 	$(this).closest(".project").find(".project-desc-more").slideToggle('slow');
 
-	var text = $('.project-desc-expand').text();
+	var text = $(this).text();
 
 	var buttonText = (text == 'Click to read more...') ? 'Click to read less...' : 'Click to read more...' ;
 
-	$('.project-desc-expand').text(buttonText);
+	$(this).text(buttonText);
 
 });
 
