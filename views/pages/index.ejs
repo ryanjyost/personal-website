@@ -14,63 +14,9 @@
 <% include ../partials/sidebar.ejs %>
 
     <div id="content">
-      <div id="landing" class="row" >
-          <div id="landing-banner">
-            <h1 id="landing-title">Hi, I'm Ryan.</h1>
 
-            <h2 id="landing-subtitle">I learn and create things in my spare time. <br/></h2>
-          </div>
-
-            <div id="scroll-below">
-              <div id="contact-info">
-
-
-              <a href=""><div id="github" class="contact">
-                <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEsElEQVRoQ+1ZTXbiRhD+qiVnO84Jgk8QfILBJwgOZD32Mm8khjnBMCcYjOSXpT3rQEJOMMwJhpzA5ATB2yCp5rVARMKSulsInl9etFT/1VdV/VV1FeE/8lFdOPrtD6eRffISoCaDW8RogNDI7M9YMGFBoBnAcxGsPg+nb5d1yLAXkFh46+QHEPoAmhUFmoMxFOHqj31AVQKy1v43b8BRH0SnFQFklzEvQWIogn9uqgAyBtLreG8ADGoDsKsFCQgYjCbujYmCtIH02780Ijv8fQ8XMpFLzp2LwLocTn9e6CzUAuJ0vLYA7g5mhSJJmZcRcO1P3KkKjBKI++PtFQm+U210yHGO6Nr77fV92RmlQJ4DiER4FZhCILE7Eck78Wy+iPmyyM1ygcQX2wq+HP1OqFTGvBShfZ5HALlAel3/yxHZSSX+7vh8NHbOd38+AeJ2/T4BHwqJBHi0glUjsO04kgtGm0FtInxnKpGcz4y/CDyNCDEz2UEwD+2TBQEvSmR4642dYXo8A2SdctgPZS5VdOmkAuJAySyFmEXADIRsHsU4FUCLgRaIZB422BVICqckmdjFgrN0BpAB0ut6A4DelWl2NHaUlF3FMuk1mwT07/J9+P1o7A6SOVuhdKwhFx0DiDyn1/W5FMiOVbZAlObc7PpsgMj7lQqUWyC6TCWC1bdVslMTd9NzrXjHLYPFQAwWIgJf+GN3ZiKY6Vyn67UE6JPOukSxMRCTKM7AE+rTOdBkjioEpPdKon0MRIetEs63wlXzGK6liiX/glmzVwzE7XozAr1Uay1Leer51Wf0Ot4QRPIRV05e4M/e2G2tLdLxH54UCnKWC6Lz4a+v56rN6xjXvieMxWjinG1cS8HZR6beRBHKWJKS638gdbiPag9ji7hdf1mWbSYHHiMYJmfpxjaZPXsTp2HEWmUvNJV2Tcd1YxunWUubfhkfRxPnylSoKvN7Hf8ehFeqtRkgugFRbioC60y31qQSomh8U0N70FufCoi6ZoyjOzDzxs6F3iHVZrld/xPJx5fGl0lRdC9Wsi8z7r2Jc61xjvEUt+PfEUHbfTNJozzN7XhzIvp+92SZJFqBNQ1F1ALxIHmbS8tYgXVdl5tJdwrt8E7XErF3MP/pTdy4dqB8WKXTEmm50LJnacAMDK3AuqkKaH0foldVKvu5D6tYyPzqhWzIXCQZbx6YjRXnAE112wK97u27uCGkeRdyPOXRGzvbloZW8YGZp97EvUwHq9C2p08yZuab0cSV1RTlp0uvxRsVFB/kghKroO7Mt+wslRZ4U1srLAfFl76oQHeAYKj75sgjoNICXbIgl8FyimIqzanG+z/dNiNmWZ7V/tJMlV5UWMQO7XC+m0iuKXd1WedTVzfD3QTjRyuwmtpFbLmo5IVWSxc20aYJkLIKTm2NnqqFO10glRs92/ui2Xo7JBAViExkL7tt0s0INC17fB0KiA4IbSDrGCNzoeC+qGxUNxDJTpYQV7pVG+MWQdIH2bVOVSC5z2yDDCHxJGMgSQYQ2XafQbK79QIVDt6yVroQx/goQmtQJQGtBCSdc8kW3L5FbdnSsCIxqwJgL4toh+EjTtzLIkeUU3nUV/ruoFFUogdpAAAAAElFTkSuQmCC">
-              </div></a>
-
-
-
-
-              <a href=""><div class="contact">
-                <img id="email-icon" class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADL0lEQVRoQ+2ZUW7aQBCGZyLBa3KD9gZpT1BygpIThEjsvgZO0N6g5HVtKXCCpCdIeoKGG7Q3KK+2xFQ/WqNlsbGxwYDFviHw7n47M//8a5gaMrghHHQGObZIniNyjsieToC11rKnuWudtnkgxpiTLPwko5YRaQyIiHwOguC91sSuuJhS6hMz/8Y0y4iIyD8iujkVGEAQ0SszX62A4IOFGQZBMK54WHt9XCnVI6IfCYQPMiGiOwt0f6wwSqkHZh7Zk1rueaXYtdYDkFqYcRAE93s92i0nV0o9MTOigTE0xowyVQthY+anBCaO4+F4PEb9HGz0er2rdruNPXWJaCYigyRjNsqvVYM3IroUkfc4jm8OBQOIVquFokZxA6LjClJuH7EwKPprwBAR6qZWebZ7eCaij0Q0FZGev4dcEOSRDSkiA5ha5dmT12kURZ20rCgE4sBAJe7qkme3ToloEkXRICu1C4MkFa61RprtXZ59eTXGJCqVKjZbg2AWX9F2Lc+uvIpIoV5WCsSBQapB0ca7kGdfXlGexpiXInpfGsTCwKztRJ7z5DUPphIIJu/3+52Li4tX2zhLybNv/Mo48EogdgOwC2hSi7GtPOMgmPnZNX5l+lVpEM95LpoUM8OjFVY0X15FZMTMSfNFvyrswEuBaK1hKLFpjBV99+QZXugxLb+z5NUW/KJf2edGxpjhTmvEFiTSoOM6T38RT57fcNJhGP60NfUVkUvmyJJXf444jm83+bzCEfH8zppp82GsCEA6LzNOczafz7thGEL1UodrWonoj4jcZvm8QiBeLmf6HX83Nk2QgrDd1/b7KRG9RFE0KuKkU3xeat3kgniXmEmeVcjL5bLfK6UgBA9WGdcue5kgKQ1qeYkpu5mqz9nMSNzEyv0oFcRtUCLyF6lR9x1kU90gNZn5g9uz1kBwfUwu9SLyK47jbpFcrnra2zxvswUwX2yqLfe89u5XRB6DIEh6xTbr1PZbrfV3IvrmLuiCzLZxnbXtOmMhrTUUEW5gIfPum8ZmvDJtzEvsxoAcOuerrt+cf6yqnsSxPH+Sf7elHd4Z5FhSKtnHOSLniOzpBP4D/oyXNYeSYUAAAAAASUVORK5CYII=">
-              </div></a>
-
-              <a href=""><div class="contact">
-                <img id="phone-icon" class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADUklEQVRoQ82a323bMBDG72xYr3UnaDJBkwlqT9B4AxswBb81G6SZIM2bQRmoOkHdCZJOEGeCuhukrxKkK86gDNnWP4qyKAF5skjxx+878ngMQsHjuu4NEX1BxBERPSPio5RyXdTG1m+Y9eHpdDocDAYPiDg9/j2O4/FqtXq2NeC8756AKIgnRLzKabQNguDa9/23LsEcgAghrhDxJwBcFA2SiB49z7vtJAhDAAArMawywK5ZbKfIYrG4iKLopSqEAu2UxXYgQgiGyIuJXIG6ZDF0XfcrANxVsVPWO12xGIP8KQvuEshOWIxBqK4aSbsuWAyFELxjfzKFsW0xBlkj4mdTEADYSikvG+inVhdsLd7YHmq1PmrU6/Uul8vltom+dPtA3kPiOOaAN36klJm5m3HHFTrYfdh13Q0AfKzwftGe8tvzvJFJHyZtExBje1kPdp4Fzngdx2Fvv6szK0RkVQ0e897TJjs8EV17nsf2tPbsQQxU+SGlPDmAtU10sMrUUSUIgvddOGSdLJdCiC0iftCY0XspJSeeVp8TkPl8Pur1ek86o7K9Yh0Ee3rgumkLEfH5fWwz4IuqKBsdixHRJgzDsa14yU0pVCHiRcdiNmEKc6M6q5gtmNIkTzdelIJrKeVER03Td0tB1EbJlUWtpJKIfM/zZqYDrNq+FIQ7Uqk+pyBauRjXi8MwnLSxAFQCYRgV/KyMLkwrq1llEHVuuQEALqlqPboLANtZV0UtEKXMFBG/a5EAAMMAwCxv00xfYai+t3Ecz6pW/rVBDGHeiGiSHhynRIh4x3cwOZPzLQiC+zKFaoGYwHBbIrrt9/u/oihigCpHgFJ1aoOomDE+ImtaNFcdIxBTZTQhktcz1TEGsQTDnz1QpxEQizB7dRoDSe0zvu6mWdNi+2ZENGsUxCQDMIHhPapxkFRuxvfxWommCcxZQHhA6prbb6jSX8jIBcKzgSRfrnM4q6HM5OwgSdwAAN/D6JSZqvLsCoStgJzRaq9Syt1tdGsgyfSqJJFjx1Sd1yAIRkky2TrIUexwrqZ1UFPt/xHRKH0ksAaS2M1xHIbRATqBsGKtrAhWBQ5O5/mvaO85sFO6L6uKZEGpQgf/wxsftIZ8dU5EfxHRLyqW/we64cdxYsYbxQAAAABJRU5ErkJggg==">
-              </div></a>
-
-              <a href=""><div id="twitter" class="contact">
-                <img id="twitter-icon" class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAEGklEQVRoQ+1ZXXISQRDuHsyDZXbDo1WBMp5APIF4AvECAU6QeALxBIknALyAeANyAuMJxIJU+WYWsKySZD5rFhaX/Z0hs4VlJU9Jtqd7vvn6b3qY/pMf/k9w0D2Qf43Je0ZsMfK4++voQenmCQNlMF8rvZNj58JU/04YKXdR3hfzE4ZsEfNRbNPANREPFth79739cJQGSh1CiW7LV+39yw0gh915Tf3T9DRM5KvdaYMYXWIu66wDcWfSdN6FZRWAPV68JaaWlOL5BhD/o1h8lUztq2O3p2PEVObwg3cqwGem6wjUg+AeS2qAZJ2Zaysdn8ZNt6F+XzMSNhKgNDaYseDww7QlQF1rOgFvBvfour2MqzWQSn86ZKIXgSGbzCxd4fdnXXfKBQt4EqW6cikVbw7N6msg1Z73I2rIFphqf6pctZm7QQ0BEH0B0RkTygyuBXHyF0h/iiQ9AA3mcNoBhRq2NkT8ExOzH6brdOWDww65ljdi4ieJCoARINqTtjPUNRDIWY+N0AZA/H7SdE4zYySNnRvsvcnK7dF1lb7XYeK3pgeQJx91+xAjs3MmnOQp8L+DennFKtBT6Rvo1TJOBMkvo96xBhLUEU1dSzygIZh6P6XzKS2GigAybrqxjmTjH9EUbAqKmIdMuJxJ5yIAVoRr5QJZ5ftLYj4wAZEqCyz7pKR+alsDgDduHcTamxhFfi8k6OO2dopeB6KLSdOtR+2EC+JXydxR/q4qJTF61pixiC4fSLQgKrew6RKWwIRrR1hlaq9lya51NZLx5ur44DzVtbZusa1vNVthWme+ZsTviXiq3MlOxioCYErG2mhR1B9F5HzLePrjpttK0hlLv3cpipY3HVcn6fW47Q60gCwHAzN1yXpW+MZMDERuhKnBHv1QRI9ksu8E2VS3isVIdPGqkewQ0Nh1EljIvadZ14fEuValO6uT+Ht/J6DOTLG24I4nbLI8k41MRqo973rXLARI89jIBPKvFMi0lkQ72Jd1ZXNEZOILNmRB+DaXbk1n8JE5+911Kk660qYdUO4QezVw7mjf521QQURpzeHWQIKFKpOxgBq9vLK01yw1uVnKKEaSLPkM0bxGghpFsJR2cco7vFzXSlJQ6XsnDOpYm+WujKhx6Fw6dZ3gvhMj1f70FUCnBRVHY3cKg8llxH8VEosXAlAMxF+X8jjX+G4a2EkqWb1ScQmblynIGkMcRR5VNLZkJuJP1qVo2Xgl49W0XN2BrYz9taAAHpjOJ82Djpa8hlB0ZKoUFwdoBWAu3fNtAjoLTyxGFEOPStMWg1u2Llcqpfoz4ltnYBtAAC4z2FX8UEnWBKgOopouMLVxJhqRpMGMnGFRmzfKWlE61wUxgecbejAyeTvRcH1tkdz0q61px4L3QHZMQMz8HztY5x6b8LK1AAAAAElFTkSuQmCC">
-              </div></a>
-
-              <a href=""><div id="resume" class="contact">
-                <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAByUlEQVRoQ+1ay03EMBCdueTKlrAdsHRABwsVEKTYypUKWErgakciHbB0QAlQAZTAOVJkZLSJQkjimNhRPuPLXiYz8+bNG89mF2EhBxeCAzqBcM7VlIAKIVrzXReQrkqMwVjRGYMZISCO6CJGikKaKhHH8TbP8ydEvASAQ5Zlj2mafjkionRjykMb9ppabRrhnKcAcFNJ/EEIcZgdEMbYERH3fYFwzj8AYNsFVCn1JqW8qNpMipEwDDdBEHwCwJmBsXchxG5sILqN7itBr4UQx9m11qnKrwBwDgB/KukKkPfW0olyzgtWvAj9FONn5/N2s0dRtEfEFBE3WqRKqbskSTRDjWdyYmeM7RDxuWkCaUAAcCul1J/lmaTYTZVVSr1IKa9mpRFXyXb5GUXsBMSiAsRI3+3XoqiDTImR1TBiukds1vS6r9HWeIsbug1PuVy2+Bp/jR+kYIuHSeyrEbtFVzgx9dZatlOraRJVWP/1QmLqU6vxazBNrYaGHfSCzokAejjxppEesZ2aEBDTPWI7tar01KcS7Vq15iWxO1WzwRmJ3ST2MdnQsYgRYsRTzzlrLU/5Wbsd/PuIdURPD/wbiKd8vLhdzP+1vgFUQA9R3nHu6wAAAABJRU5ErkJggg==">
-              </div></a>
-          </div>
-
-              <h4>Scroll to see some stuff I've made.</h4>
-              <div class="arrow-cont">
-                <div id="arrow-1" class="arrow-down"></div>
-
-              </div>
-            </div>
-      </div> <!-- landing -->
-
-      <div id="blisst" class="row project">
-        <video controls>
-           <source src="images/blisst-preview.mp4" type="video/mp4">
-           You're browser does not support videos.
-        </video>
-
-
-
-
-
-      </div><!--blistt-->
-
-
-
+        <% include ../partials/landing.ejs %>
+        <% include ../partials/projectBlisst.ejs %>
 
 
 
