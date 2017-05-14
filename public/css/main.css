@@ -523,6 +523,7 @@ Projects
 
     .project-desc{
       display: block;
+      font-weight: 900;
     }
 
     .project-desc-expand{
@@ -531,6 +532,7 @@ Projects
       border-left: 1px solid #d8d8d8;
       cursor: pointer;
       color: #a4a4a4;
+      font-size: 1em;
     }
 
       .project-desc-expand:hover{
@@ -607,6 +609,10 @@ Media Bias Map
 
 #media-bias-map{
   border-left: 4px solid rgb(245, 169, 188);
+}
+
+#mbm-extension{
+  border-left: 4px solid #A9D0F5;
 }
 
 
