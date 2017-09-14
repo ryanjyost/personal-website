@@ -47,7 +47,7 @@ h5{
 }
 
 	h4 a{
-		font-size: 2em;
+		 font-size: 2em;
 	}
 
 @media(max-width:768px){
@@ -515,7 +515,7 @@ Projects
       color: #333333;
     }
 
-  .project-desc, .project-desc-more{
+  .project-desc, .project-desc-more {
     width: 90%;
     margin: auto;
     font-weight: 400;
@@ -530,6 +530,16 @@ Projects
       font-weight: 900;
     }
 
+    .project-desc a{
+      font-weight: 900;
+      line-height: 1.5em;
+      text-align: justify;
+      padding: 10px 0px;
+      font-size: 1em !important;
+      color: #585858;
+      text-decoration: underline;
+    }
+
 
 
     .project-desc-expand{
@@ -539,6 +549,7 @@ Projects
       cursor: pointer;
       color: #a4a4a4;
       font-size: .8em;
+      display: none;
     }
 
       .project-desc-expand:hover{
@@ -581,12 +592,13 @@ Projects
         display: block;
         border-radius: 5px;
         border: 4px solid #f2f2f2;
+        background-image: url("images/fjf-preview.png");
       }
 
 
 
       @media(min-width: 768px){
-        video{
+        .project-img{
           width: 100%;
           max-width: 700px;
           margin: auto;
@@ -597,8 +609,15 @@ Projects
           border: 4px solid #f2f2f2;
         }
 
-        .project-img{
-          display: none !important;
+        video{
+          width: 100%;
+          max-width: 700px;
+          margin: auto;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          display: block;
+          border-radius: 5px;
+          border: 4px solid #f2f2f2;
         }
       }
 
@@ -609,52 +628,107 @@ Projects
     margin: auto;
     padding: 8px 3px;
     font-size: 1em;
-    opacity: .5;
+    opacity: .9;
     font-weight: 900;
     text-align: right;
+    letter-spacing:  0.03em;
   }
 
 
+          /*===================
+          Blisst
+          ====================*/
+          #blisst{
+            border-left: 4px solid #C6ECF7;
+          }
+
+            #blisst-title{
+
+            }
+
+          /*===================
+          Daily Gray
+          ====================*/
+          #daily-gray{
+             border-left: 4px solid #a4a4a4;
+          }
+
+          /*===================
+          First Job Finance
+          ====================*/
+          #fjf{
+             border-left: 4px solid #00c0f3;
+          }
+
+          /*===================
+          Rainy Day Fund
+          ====================*/
+          #rainy-day-fund{
+            border-left: 4px solid #a9f5bc;
+          }
+
+
+          /*===================
+          Media Bias Map
+          ====================*/
+
+          #media-bias-map{
+            border-left: 4px solid rgb(245, 169, 188);
+          }
+
+          #mbm-extension{
+            border-left: 4px solid #A9D0F5;
+          }
+
 /*===================
-Blisst
+Skills
 ====================*/
-#blisst{
-  border-left: 4px solid #C6ECF7;
+
+#skills-row{
+   border-left: 4px solid #585858;
+   margin-bottom: 15vh;
 }
 
-  #blisst-title{
+#skills-content{
+  padding: 20px 0px;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
 
+  #skills-content h3{
+    text-align: center;
   }
 
-/*===================
-Daily Gray
-====================*/
-#daily-gray{
-   border-left: 4px solid #a4a4a4;
+  @media(min-width: 768px){
+    #skills-content{
+      width:  80% !important;
+    }
+  }
+
+.section-header{
+  padding: 10px 20px;
+  font-weight: 900;
+  color: #585858;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 900;
+
 }
 
-/*===================
-Rainy Day Fund
-====================*/
-#rainy-day-fund{
-  border-left: 4px solid #a9f5bc;
+.skill-icon{
+  height: 4em;
+  margin-right: 5px;
+  clear: right;
+}
+.skill-single{
+  font-size: 1.4em;
+  display: inline;
 }
 
-
-/*===================
-Media Bias Map
-====================*/
-
-#media-bias-map{
-  border-left: 4px solid rgb(245, 169, 188);
+.skill-name{
+  width: 100%;
+  text-align: center;
 }
-
-#mbm-extension{
-  border-left: 4px solid #A9D0F5;
-}
-
-
-
 
 
 
