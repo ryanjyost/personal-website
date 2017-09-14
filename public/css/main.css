@@ -473,6 +473,20 @@ Main Content */
 }
 
 
+.section-header{
+  padding: 50px 0px 20px 0px;
+  font-weight: 900;
+  color: #585858;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+
+
 
 
 /*===================
@@ -579,10 +593,17 @@ Projects
       }
     }
 
-    video{
-      display: none;
-    }
 
+      video{
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        border-radius: 5px;
+        border: 4px solid #f2f2f2;
+      }
       .project-img{
         width: 100%;
         max-width: 700px;
@@ -609,16 +630,11 @@ Projects
           border: 4px solid #f2f2f2;
         }
 
-        video{
-          width: 100%;
-          max-width: 700px;
-          margin: auto;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          display: block;
-          border-radius: 5px;
-          border: 4px solid #f2f2f2;
+        #blisst-img{
+          display: none !important;
         }
+
+
       }
 
 
@@ -685,15 +701,12 @@ Skills
 ====================*/
 
 #skills-row{
-   border-left: 4px solid #585858;
    margin-bottom: 15vh;
+   background-color: #FAFCFD;
 }
 
 #skills-content{
-  padding: 20px 0px;
-  width: 90%;
-  display: block;
-  margin: auto;
+
 }
 
   #skills-content h3{
@@ -706,28 +719,43 @@ Skills
     }
   }
 
-.section-header{
-  padding: 10px 20px;
-  font-weight: 900;
-  color: #585858;
-   font-family: 'Raleway', sans-serif;
-   font-weight: 900;
 
+.skills-section-title{
+  font-weight: 900;
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.skills-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .skill-icon{
   height: 4em;
-  margin-right: 5px;
-  clear: right;
+  display: block;
+  margin: auto;
 }
 .skill-single{
   font-size: 1.4em;
-  display: inline;
+  margin: 20px 0px;
+
 }
 
 .skill-name{
   width: 100%;
   text-align: center;
+  display: block;
+  font-weight: 400;
 }
 
 
