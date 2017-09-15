@@ -39,7 +39,7 @@ $(document).ready(function(){
 						var n=0;
 					}
 
-					$('#arrow-1').delay(0).animate({'opacity':'1'}, 1000, 'swing').delay(0).animate({'opacity':'0'}, 1000, 'swing');
+					$('#arrow').delay(0).animate({'opacity':'.6'}, 1200, 'swing').delay(0).animate({'opacity':'0'}, 1200, 'swing');
 
 
 				}
@@ -68,29 +68,31 @@ $(document).ready(function(){
 
 
 	//=====================================================
-	// Landing Icons
+	// Contact Icons
 	//=====================================================
 
-		var landingIconText = {
-			'resume-icon': 'Click to download my resume.',
+		var iconText = {
 			'twitter-icon': '@ryanjyost',
-			'phone-icon': '412-841-1697',
 			'email-icon': 'ryanjyost@gmail.com',
-			'github-icon': 'github.com/ryanjyost'
-		}
+			'github-icon': 'github.com/ryanjyost',
+			'medium-icon': 'Functional Finance',
+			'linkedin-icon': 'LinkedIn',
+			'codepen-icon': 'codepen.io/ryanjyost'
 
-	$('.contact-icon-cont').click(function(){
-		var currentId = $(this).find(".landing-icon")[0].id;
-		$('#landing-contact-info h4').text(landingIconText[currentId]);
+		};
+
+	// $('.contact-icon-cont').click(function(){
+	// 	var currentId = $(this).find(".landing-icon")[0].id;
+	// 	$('#landing-contact-info h4').text(landingIconText[currentId]);
+	// });
+
+	$('.contact-single').hover(function(){
+		var currentId = $(this).find(".contact-icon")[0].id;
+		$('#contact-info').text(iconText[currentId]);
 	});
 
-	$('.contact-icon-cont').hover(function(){
-		var currentId = $(this).find(".landing-icon")[0].id;
-		$('#landing-contact-info h4').text(landingIconText[currentId]);
-	});
-
-	$('.contact-icon-cont').mouseleave(function(){
-		$('#landing-contact-info h4').text("");
+	$('.contact-single').mouseleave(function(){
+		$('#contact-info').text("Find & Contact");
 	});
 
 
@@ -98,16 +100,16 @@ $(document).ready(function(){
 // Read more project expand
 //=====================================================
 
-$('.project-desc-expand').click(function(){
-	$(this).closest(".project").find(".project-desc-more").slideToggle('slow');
+// $('.project-desc-expand').click(function(){
+// 	$(this).closest(".project").find(".project-desc-more").slideToggle('slow');
 
-	var text = $(this).text();
+// 	var text = $(this).text();
 
-	var buttonText = (text == 'Click to read more...') ? 'Click to read less...' : 'Click to read more...' ;
+// 	var buttonText = (text == 'Click to read more...') ? 'Click to read less...' : 'Click to read more...' ;
 
-	$(this).text(buttonText);
+// 	$(this).text(buttonText);
 
-});
+// });
 
 
 //=====================================================

@@ -180,6 +180,7 @@ nav{
 
 	.panel{
 		border: 0px solid #fff !important;
+    cursor: pointer;
 	}
 
 	#panel-1{display:none;}
@@ -198,7 +199,7 @@ nav{
 		.panel-title a:hover{
 			text-decoration: none !important;
 			padding-left: .1em;
-			cursor: default;
+			cursor: pointer;
 		}
 
 		.panel-title a:focus{
@@ -216,7 +217,7 @@ nav{
 
 		td a:hover{
 			padding-left: .1em;
-			cursor: default;
+			cursor: pointer;
 		}
 
 		.glyphicon{
@@ -320,7 +321,7 @@ Landing
 
 #landing{
 	display: block;
-	padding: 20vh 5% 10vh 5%;
+	padding: 18vh 5% 10vh 5%;
   width: 96%;
   margin: auto;
   height: 100vh;
@@ -348,115 +349,22 @@ Landing
 		}
 
   /*===================
-  Contact Info */
-  #contact-info{
-    height: 10vh;
+  Arrow */
+
+  .arrow-cont{
     display: none;
-    margin: 5vh 0px 2vh 0px;
   }
 
-    .contact-icon-cont{
-      display: inline-block;
-      padding: 2vh 2%;
-      border: 1px solid #fff;
-      margin: 0px 0px;
-      float: right;
-      max-width: 20%;
-    }
-
-      .contact-icon-cont:hover{
-        padding-top: 1.5vh !important;
-      }
-
-
-    .contact h5{
-      margin-top: 10px;
-      display: none;
-    }
-
-      .landing-icon{
-        width: 90%;
-      }
-
-        .landing-icon:hover{
-          cursor: pointer;
-        }
-
-      #twitter-icon{
-          padding-top: 0vh;
-          opacity: .6;
-        }
-
-        #phone-icon{
-          padding-top: 1vh;
-          width: 70%;
-        }
-
-        #email-icon{
-          padding-top: 0.4vh;
-        }
-
-      @media(min-width:992px){
-        .icon{
-          width: 80%;
-          display: block;
-          margin: auto;
-        }
-
-
-      }
-
-
-
-
-
-    #resume:hover{
-
-    }
-
-
-
-#personal-photo{
-	border-radius: 5px !important;
-	width: 150px;
-	border: 1px solid #f2f2f2;
-	position: relative;
-	top: 0;
-	margin: auto;
-	display: block;
-	margin-top: 30px;
-	float: right;
-}
-
-
-/*===================
-Landing contact info
-*/
-
-#landing-contact-info{
-	margin-bottom: 10px;
-	margin-top: 12vh;
-	padding-bottom: 50px;
-	display: none;
-  width: 100%;
-}
-
-  @media(min-width:992px){
-    #contact-icon-text{
-      margin-top: 10vh !important;
-    }
+  #arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #CEE3F6;
+    display: block;
+    margin: auto;
+    margin-top:  10vh;
   }
-
-#landing-contact-info h4{
-	font-weight: 800 !important;
-	color: #585858;
-	text-align: right;
-	width: 100%;
-	display: inline-block;
-	float: right;
-	padding-bottom: 5px;
-}
-
 
 /*===================
 Main Content */
@@ -481,13 +389,43 @@ Main Content */
   font-weight: 900;
   display: block;
   text-align: center;
-  width: 100%;
+  width: 90%;
+  max-width: 500px;
   margin-bottom: 20px;
   letter-spacing: 0.03em;
+  border-bottom: 0.05em solid #f2f2f2;
+  text-transform: uppercase;
 }
 
+/*===================
+About
+====================*/
+#about{
+  padding-bottom: 50px ;
+}
 
+.about-content{
+  max-width: 600px;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 18px;
+}
 
+  #personal-photo{
+    border-radius: 50%;
+    width: 200px;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    top: 0;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 
 /*===================
 Projects
@@ -513,7 +451,7 @@ Projects
   }
 
   .project-title{
-    font-size: 2.5em;
+    font-size: 2em;
     width: 90%;
     display: block;
     margin: auto;
@@ -541,19 +479,7 @@ Projects
 
     .project-desc{
       display: block;
-      font-weight: 900;
     }
-
-    .project-desc a{
-      font-weight: 900;
-      line-height: 1.5em;
-      text-align: justify;
-      padding: 10px 0px;
-      font-size: 1em !important;
-      color: #585858;
-      text-decoration: underline;
-    }
-
 
 
     .project-desc-expand{
@@ -605,7 +531,7 @@ Projects
         border: 4px solid #f2f2f2;
       }
       .project-img{
-        width: 100%;
+        width: 90%;
         max-width: 700px;
         margin: auto;
         margin-top: 20px;
@@ -700,9 +626,12 @@ Projects
 Skills
 ====================*/
 
+#skills{
+
+}
+
 #skills-row{
    margin-bottom: 15vh;
-   background-color: #FAFCFD;
 }
 
 #skills-content{
@@ -726,9 +655,9 @@ Skills
   width: 80%;
   max-width: 400px;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #f2f2f2;
+/*   border-bottom: 1px solid #f2f2f2; */
 }
 
 .skills-section{
@@ -737,18 +666,17 @@ Skills
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .skill-icon{
-  height: 4em;
+  height: 2.5em;
   display: block;
   margin: auto;
 }
 .skill-single{
   font-size: 1.4em;
   margin: 20px 0px;
-
 }
 
 .skill-name{
@@ -756,17 +684,81 @@ Skills
   text-align: center;
   display: block;
   font-weight: 400;
+  font-size: 16px;
 }
 
 
 
 
+/*===================
+Resume
+====================*/
+#resume{
+  padding-bottom: 50px;
+}
+
+#resume p{
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom:  20px;
+}
+
+#resume-preview{
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  display: block;
+}
 
 
+/*===================
+Contact
+====================*/
 
+#contact{
+  padding-bottom: 30px;
+}
 
+#contact-info{
+  text-transform: none !important;
+}
 
+.contact-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
 
+.contact-icon-cont{
+  width: 90%;
+}
+
+.contact-icon{
+  height: 3em;
+  display: block;
+  margin: auto;
+  opacity: 0.6;
+}
+
+  .contact-icon:hover{
+    opacity: 0.9;
+
+  }
+
+.contact-single{
+  font-size: 1.4em;
+  margin: 20px 0px;
+}
+
+@media(min-width: 768px){
+    .contact-icon-cont{
+      max-width:  600px !important;
+    }
+  }
 
 
 
