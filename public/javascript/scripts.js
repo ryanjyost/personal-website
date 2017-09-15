@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
 	//=====================================================
 	// Initial Page Load
 	//=====================================================
@@ -35,13 +33,11 @@ $(document).ready(function(){
 				for(var i=1; i>-101;i--){
 					if(i === 1){
 						var n=1;
-					} else{
+					} else {
 						var n=0;
 					}
 
 					$('#arrow').delay(0).animate({'opacity':'.6'}, 1200, 'swing').delay(0).animate({'opacity':'0'}, 1200, 'swing');
-
-
 				}
 			}
 
@@ -66,7 +62,6 @@ $(document).ready(function(){
 		}
 	});
 
-
 	//=====================================================
 	// Contact Icons
 	//=====================================================
@@ -81,11 +76,6 @@ $(document).ready(function(){
 
 		};
 
-	// $('.contact-icon-cont').click(function(){
-	// 	var currentId = $(this).find(".landing-icon")[0].id;
-	// 	$('#landing-contact-info h4').text(landingIconText[currentId]);
-	// });
-
 	$('.contact-single').hover(function(){
 		var currentId = $(this).find(".contact-icon")[0].id;
 		$('#contact-info').text(iconText[currentId]);
@@ -94,36 +84,6 @@ $(document).ready(function(){
 	$('.contact-single').mouseleave(function(){
 		$('#contact-info').text("Find & Contact");
 	});
-
-
-//=====================================================
-// Read more project expand
-//=====================================================
-
-// $('.project-desc-expand').click(function(){
-// 	$(this).closest(".project").find(".project-desc-more").slideToggle('slow');
-
-// 	var text = $(this).text();
-
-// 	var buttonText = (text == 'Click to read more...') ? 'Click to read less...' : 'Click to read more...' ;
-
-// 	$(this).text(buttonText);
-
-// });
-
-
-//=====================================================
-// Functions
-//=====================================================
-
-
-
-
-
-
-
-
-
 
 
 });

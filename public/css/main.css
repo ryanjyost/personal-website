@@ -37,7 +37,9 @@ h2{
 	margin: auto;
 }
 
-
+h4 a{
+   font-size: 2em;
+}
 
 h5{
   font-size: 0.8em;
@@ -46,19 +48,15 @@ h5{
   margin: 0px;
 }
 
-	h4 a{
-		 font-size: 2em;
-	}
-
 @media(max-width:768px){
-		h1{
-			font-size: 4em !important;
-		}
-
-		h2{
-			font-size:2em !important;
-		}
+	h1{
+		font-size: 4em !important;
 	}
+
+	h2{
+		font-size:2em !important;
+	}
+}
 
 /* Misc Selectors, Bootstrap elements */
 
@@ -66,21 +64,11 @@ button{
 	border: 0px solid #fff !important;
 }
 
-.row {
-/*  -moz-column-width: 25em;
- -webkit-column-width: 25em;
- -moz-column-gap: 0em;
- -webkit-column-gap: 0em; */
-
-}
-
 .container{
 	padding: 0vh 0% 0vh 0%;
 	width: 100% !important;
 	max-width: 1200px;
-
 }
-
 
 /*===================
 Sidebar
@@ -108,8 +96,6 @@ nav{
 	padding: 50px 0px 50px 0px;
 }
 
-
-
 	.navbar-header{
 		min-width: 200px;
 		padding-right: 5%;
@@ -131,17 +117,16 @@ nav{
 			  -webkit-transition: transform .2s ease-in-out; /* Safari and Chrome */
 		}
 
-     .up{
-        transform: rotate(0deg);
-        -ms-transform: rotate(0deg); /* IE 9 */
-        -moz-transform: rotate(0deg); /* Firefox */
-        -webkit-transform: rotate(0deg); /* Safari and Chrome */
-        -o-transform: rotate(0deg); /* Opera */
-        transition:transform .2s ease-in-out;
-        -moz-transition: transform .2s ease-in-out; /* Firefox */
-        -webkit-transition: transform .2s ease-in-out; /* Safari and Chrome */
+    .up{
+      transform: rotate(0deg);
+      -ms-transform: rotate(0deg); /* IE 9 */
+      -moz-transform: rotate(0deg); /* Firefox */
+      -webkit-transform: rotate(0deg); /* Safari and Chrome */
+      -o-transform: rotate(0deg); /* Opera */
+      transition:transform .2s ease-in-out;
+      -moz-transition: transform .2s ease-in-out; /* Firefox */
+      -webkit-transition: transform .2s ease-in-out; /* Safari and Chrome */
     }
-
 
 .icon-bar{
 	background-color: #555555;
@@ -163,7 +148,6 @@ nav{
 	background-color: transparent;
 }
 
-
 .panel-group{
 	box-shadow: none !important;
 
@@ -183,13 +167,12 @@ nav{
     cursor: pointer;
 	}
 
+  /* panel id's for fade in on page load */
 	#panel-1{display:none;}
 	#panel-2{display:none;}
 	#panel-3{display:none;}
 	#panel-4{display:none;}
 	#panel-5{display:none;}
-
-		/* panel id's for fade in on page load */
 
 	.panel-heading{
 		background-image: linear-gradient(to bottom,#fff 0,#fff 100%) !important;
@@ -238,8 +221,6 @@ nav{
 	#content{
 		width: 75% !important;
 	}
-
-
 }
 
 @media (max-width: 992px) {
@@ -313,8 +294,6 @@ footer{
 		display: none;
 	}
 
-
-
 /*===================
 Landing
 ====================*/
@@ -344,9 +323,6 @@ Landing
 		padding: 10px 0px 10px 0px;
 		display: none;
 	}
-		#landing-subtitle{
-
-		}
 
   /*===================
   Arrow */
@@ -367,8 +343,7 @@ Landing
   }
 
 /*===================
-Main Content */
-
+General Content */
 
 #content{
   overflow: scroll !important;
@@ -379,7 +354,6 @@ Main Content */
   margin: auto;
   display: block;
 }
-
 
 .section-header{
   padding: 50px 0px 20px 0px;
@@ -415,17 +389,17 @@ About
   font-size: 18px;
 }
 
-  #personal-photo{
-    border-radius: 50%;
-    width: 200px;
-    border: 1px solid #f2f2f2;
-    position: relative;
-    top: 0;
-    margin: auto;
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
+#personal-photo{
+  border-radius: 50%;
+  width: 200px;
+  border: 1px solid #f2f2f2;
+  position: relative;
+  top: 0;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
 /*===================
 Projects
@@ -447,7 +421,6 @@ Projects
     .project-inner-cont{
        width:80% !important
     }
-
   }
 
   .project-title{
@@ -460,8 +433,6 @@ Projects
     padding: 0px 0px 8px 0px;
     font-family: 'Raleway', sans-serif;
   }
-
-
 
     .project-title a{
       color: #333333;
@@ -480,7 +451,6 @@ Projects
     .project-desc{
       display: block;
     }
-
 
     .project-desc-expand{
       padding: 0px 5px;
@@ -520,7 +490,32 @@ Projects
     }
 
 
-      video{
+    video{
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: block;
+      border-radius: 5px;
+      border: 4px solid #f2f2f2;
+    }
+    .project-img{
+      width: 90%;
+      max-width: 700px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: block;
+      border-radius: 5px;
+      border: 4px solid #f2f2f2;
+      background-image: url("images/fjf-preview.png");
+    }
+
+
+
+    @media(min-width: 768px){
+      .project-img{
         width: 100%;
         max-width: 700px;
         margin: auto;
@@ -530,38 +525,11 @@ Projects
         border-radius: 5px;
         border: 4px solid #f2f2f2;
       }
-      .project-img{
-        width: 90%;
-        max-width: 700px;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: block;
-        border-radius: 5px;
-        border: 4px solid #f2f2f2;
-        background-image: url("images/fjf-preview.png");
+
+      #blisst-img{
+        display: none !important;
       }
-
-
-
-      @media(min-width: 768px){
-        .project-img{
-          width: 100%;
-          max-width: 700px;
-          margin: auto;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          display: block;
-          border-radius: 5px;
-          border: 4px solid #f2f2f2;
-        }
-
-        #blisst-img{
-          display: none !important;
-        }
-
-
-      }
+    }
 
 
   .project-info{
@@ -577,65 +545,38 @@ Projects
   }
 
 
-          /*===================
-          Blisst
-          ====================*/
-          #blisst{
-            border-left: 4px solid #C6ECF7;
-          }
+  /*===================
+  Project Borders */
+  #blisst{
+    border-left: 4px solid #C6ECF7;
+  }
 
-            #blisst-title{
+  #daily-gray{
+     border-left: 4px solid #a4a4a4;
+  }
 
-            }
+  #fjf{
+     border-left: 4px solid #00c0f3;
+  }
 
-          /*===================
-          Daily Gray
-          ====================*/
-          #daily-gray{
-             border-left: 4px solid #a4a4a4;
-          }
+  #rainy-day-fund{
+    border-left: 4px solid #a9f5bc;
+  }
 
-          /*===================
-          First Job Finance
-          ====================*/
-          #fjf{
-             border-left: 4px solid #00c0f3;
-          }
+  #media-bias-map{
+    border-left: 4px solid rgb(245, 169, 188);
+  }
 
-          /*===================
-          Rainy Day Fund
-          ====================*/
-          #rainy-day-fund{
-            border-left: 4px solid #a9f5bc;
-          }
-
-
-          /*===================
-          Media Bias Map
-          ====================*/
-
-          #media-bias-map{
-            border-left: 4px solid rgb(245, 169, 188);
-          }
-
-          #mbm-extension{
-            border-left: 4px solid #A9D0F5;
-          }
+  #mbm-extension{
+    border-left: 4px solid #A9D0F5;
+  }
 
 /*===================
 Skills
 ====================*/
 
-#skills{
-
-}
-
 #skills-row{
    margin-bottom: 15vh;
-}
-
-#skills-content{
-
 }
 
   #skills-content h3{
@@ -686,8 +627,6 @@ Skills
   font-weight: 400;
   font-size: 16px;
 }
-
-
 
 
 /*===================
@@ -759,37 +698,6 @@ Contact
       max-width:  600px !important;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
