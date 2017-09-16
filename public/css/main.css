@@ -383,7 +383,7 @@ About
   width: 80%;
   margin: auto;
   padding: 10px 0px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 1.5;
   text-align: justify;
   font-size: 18px;
@@ -534,11 +534,12 @@ Projects
 
   .project-info{
     border-top: 1px solid #f2f2f2;
+    color:  #585858;
     width: 90%;
     margin: auto;
     padding: 8px 3px;
     font-size: 1em;
-    opacity: .9;
+    opacity: 1;
     font-weight: 900;
     text-align: right;
     letter-spacing:  0.03em;
@@ -624,8 +625,9 @@ Skills
   width: 100%;
   text-align: center;
   display: block;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 16px;
+  color: #000;
 }
 
 
