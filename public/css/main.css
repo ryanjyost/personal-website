@@ -699,10 +699,14 @@ Contact
     .contact-icon-cont{
       max-width:  600px !important;
     }
-  }
+}
 
 
+/*===================
+Remove Scrollbars - Thanks to Tyler Hirschel for the assist
+====================*/
 
-
-
+::-webkit-scrollbar {
+    display: none;
+}
 
