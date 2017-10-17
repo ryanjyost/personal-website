@@ -70,7 +70,7 @@ $(document).ready(function(){
 			'twitter-icon': '@ryanjyost',
 			'email-icon': 'ryanjyost@gmail.com',
 			'github-icon': 'github.com/ryanjyost',
-			'medium-icon': 'Functional Finance',
+			'medium-icon': 'Blog',
 			'linkedin-icon': 'LinkedIn',
 			'codepen-icon': 'codepen.io/ryanjyost'
 
